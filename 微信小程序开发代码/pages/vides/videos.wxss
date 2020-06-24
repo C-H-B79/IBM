@@ -1,0 +1,25 @@
+.content .title .name{
+  font-size: x-large;
+  margin: 2px;
+}
+image{
+  width: 100%;
+  padding: 2px;
+}
+.text{
+  font-size: larger;
+  margin: 2px;
+}
+.title_step{
+  color: var(--themeColor);
+  font-size: x-large;
+  margin: 2px;
+}
+.steps .step{
+  margin: 2px;
+  font-size: larger;
+}
+video{
+  width: 100%;
+  margin: 2rpx;
+}

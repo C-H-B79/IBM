@@ -1,0 +1,2 @@
+<view class="title">{{dataList[0].title}}</view>
+<video class="videos" src="{{url}}" controls></video>

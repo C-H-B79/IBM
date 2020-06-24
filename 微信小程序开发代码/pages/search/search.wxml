@@ -1,0 +1,47 @@
+<view class="search_t">
+<input value="{{inpvalue}}" placeholder="请输入你想搜索的美食" bindinput="handleInput"></input>
+<button hidden="{{!isFocus}}" bindtap="handleCancle">取消</button>
+</view>
+<view class="content">
+<navigator class="search_item" wx:for="{{dataList}}" wx:key="index" url="/pages/vides/videos?name={{item.name}}&id={{item._id}}&page=0">
+<image src="{{item.img}}" mode="widthFix"></image>
+<view>{{item.name}}</view>
+</navigator>
+<navigator class="search_item" wx:for="{{dataList_1}}" wx:key="index" url="/pages/vides/videos?name={{item.name}}&id={{item._id}}&page=1">
+<image src="{{item.img}}" mode="widthFix"></image>
+<view>{{item.name}}</view>
+</navigator>
+<navigator class="search_item" wx:for="{{dataList_2}}" wx:key="index" url="/pages/vides/videos?name={{item.name}}&id={{item._id}}&page=2">
+<image src="{{item.img}}" mode="widthFix"></image>
+<view>{{item.name}}</view>
+</navigator>
+<navigator class="search_item" wx:for="{{dataList_3}}" wx:key="index" url="/pages/vides/videos?name={{item.name}}&id={{item._id}}&page=3">
+<image src="{{item.img}}" mode="widthFix"></image>
+<view>{{item.name}}</view>
+</navigator>
+</view>
+<view class="ti" hidden="{{isFocus}}">热门搜索</view>
+<view class="resou" hidden="{{isFocus}}">
+<navigator class="search_item1" wx:for="{{datal}}" wx:key="index" url="/pages/vides/videos?name={{item.name}}&id={{item._id}}&page=0">
+<image src="{{item.img}}" mode="widthFix"></image>
+<view>{{item.name}}</view>
+</navigator></view>
+<view class="resou" hidden="{{isFocus}}">
+<navigator class="search_item1" wx:for="{{datal_1}}" wx:key="index" url="/pages/vides/videos?name={{item.name}}&id={{item._id}}&page=1">
+<image src="{{item.img}}" mode="widthFix"></image>
+<view>{{item.name}}</view>
+</navigator>
+</view>
+<view class="resou" hidden="{{isFocus}}">
+<navigator class="search_item1" wx:for="{{datal_2}}" wx:key="index" url="/pages/vides/videos?name={{item.name}}&id={{item._id}}&page=2">
+<image src="{{item.img}}" mode="widthFix"></image>
+<view>{{item.name}}</view>
+</navigator></view>
+<view class="resou" hidden="{{isFocus}}">
+<navigator class="search_item1" wx:for="{{datal_3}}" wx:key="index" url="/pages/vides/videos?name={{item.name}}&id={{item._id}}&page=3">
+<image src="{{item.img}}" mode="widthFix"></image>
+<view>{{item.name}}</view>
+</navigator>
+
+</view>
+

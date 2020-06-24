@@ -1,0 +1,32 @@
+<SearchInput></SearchInput>
+<view class="food_swiper">
+<swiper autoplay indicator-dots circular interval="2000">
+<swiper-item wx:for="{{data_l}}" wx:key="index">
+<navigator url="/pages/vides/videos?name={{item.name}}&id={{item._id}}&page=0">
+    <image mode="widthFix" src="{{item.img}}"></image>
+    <view class="title_t">
+        {{item.name}}
+    </view>
+</navigator>
+</swiper-item>
+</swiper>
+</view>
+<view class="tabs">
+<view class="title_1" id="{{0==currt?'active':''}}" bindtap="handleItemTap" data-index="0">美食推荐</view>
+<view class="title_1" id="{{1==currt?'active':''}}" bindtap="handleItemTap" data-index="1">家常菜谱</view>
+<view class="title" id="{{2==currt?'active':''}}" bindtap="handleItemTap" data-index="2">小吃</view>
+<view class="title" id="{{3==currt?'active':''}}" bindtap="handleItemTap" data-index="3">烘焙</view>
+</view>
+<view class="content">
+<view class="content_item" wx:for="{{dataList}}" wx:key="index">
+<navigator url="/pages/vides/videos?name={{item.name}}&id={{item._id}}&page={{currt}}">
+<image mode="widthFix" src="{{item.img}}"></image>
+<view class="title_t">{{item.name}}</view>
+</navigator>
+</view>
+</view>
+<view class='top' bindtap="returnTop">
+<image src="../../icons/return.png"></image>
+<view class="return">返回顶端</view>
+</view>
+

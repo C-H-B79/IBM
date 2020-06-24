@@ -1,0 +1,9 @@
+.title{
+  margin: 2px;
+  font-size: x-large;
+
+}
+.videos{
+  margin: 2px;
+  width: 100%;
+}

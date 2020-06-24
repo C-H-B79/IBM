@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/video/index",
+    "pages/search/search",
+    "pages/vides/videos",
+    "pages/videos/videos"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3A5FCD",
+    "navigationBarTitleText": "美食",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#dbdbdb",
+    "position":"bottom",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "美食",
+      "iconPath": "icons/food.png",
+      "selectedIconPath": "icons/food_i.png"
+    },
+    {
+      "pagePath": "pages/video/index",
+      "text": "趣味视频",
+      "iconPath": "icons/video.png",
+      "selectedIconPath": "icons/video_i.png"
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

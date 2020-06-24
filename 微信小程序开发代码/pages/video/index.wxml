@@ -1,0 +1,8 @@
+<view class="page">
+<view class="content" wx:for="{{dataList}}" wx:key="index">
+<navigator url="/pages/videos/videos?id={{item._id}}">
+<view>{{item.title}}</view>
+<image src="{{item.img}}" mode="widthFix"></image>
+</navigator>
+</view>
+</view>

@@ -1,0 +1,48 @@
+page{
+  background-color: #d9d6c3;
+  margin: 10rpx;
+  padding: 2px;
+}
+.search_t{
+  display: flex;
+  margin: 2px;
+}
+.search_t input{
+  flex: 7;
+  background-color: #fff;
+  font-size: medium;
+  margin: 10rpx;
+  height: 30px;
+}
+.search_t button{
+  font-size: medium;
+  margin: 10rpx;
+  height: 30px;
+  background-color: #fff;
+  flex: 1;
+}
+.search_item{
+  display: flex;
+  margin: 2px;
+  padding: 2px;
+  font-size: medium;
+  background-color: #fff;
+}
+.search_item image{
+  width: 15%;
+}
+.resou{
+  background-color: #fff;
+  display: flex;
+}
+.resou navigator{
+  width: 33.33%;
+}
+.resou navigator image{
+  width: 100%;
+  margin: 2px;
+}
+.ti{
+  font-size: medium;
+}
+

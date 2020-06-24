@@ -1,0 +1,25 @@
+<video hidden="{{isfocus}}" class="viedos" src="{{url}}" controls></video>
+<view class="content" hidden="{{isfocus}}">
+<view class="title">
+<view class="name">{{dataList[0].name}}</view>
+<image src="{{dataList[0].img}}" mode="widthFix"></image>
+</view>
+<view class="title_step">{{dataList[0].name}}的做法:</view>
+<view class="steps" wx:for="{{dataList[0].video_a.li_list_video_text}}" wx:key="index"> 
+<view class="step">{{item}}</view>
+</view>
+</view>
+
+
+<view class="content" hidden="{{!isfocus}}">
+<view class="title">
+<view class="name">{{dataList[0].name}}</view>
+<image src="{{dataList[0].img}}" mode="widthFix"></image>
+</view>
+<view class="text">{{dataList[0].list_content.text[0]}}</view>
+<view class="title_step">{{dataList[0].name}}的做法:</view>
+<view class="steps" wx:for="{{dataList[0].list_content.step}}" wx:key="index"> 
+<view class="step">{{item.text[0]}}</view>
+<image src="{{item.img}}" mode="widthFix"></image>
+</view>
+</view>

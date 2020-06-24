@@ -1,0 +1,11 @@
+page,view,text,swiper,swiper-item,image,navigator{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+page{
+  /*定义主题*/
+  --themeColor:#3A5FCD;
+  /*定义统一的字体*/
+  font-size:30rpx;
+}
